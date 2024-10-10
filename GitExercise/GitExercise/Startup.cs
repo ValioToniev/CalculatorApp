@@ -16,7 +16,6 @@ namespace GitExercise
         private const string Password = "abcd1234";
         public static void Main()
         {
-<<<<<<< HEAD
             bool isAuthorized = CheckCredentials();
             if (isAuthorized)
             {
@@ -29,12 +28,6 @@ namespace GitExercise
 
             Console.WriteLine("Console Calculator App");
             Console.WriteLine(new string('-', 15));
-=======
-            while (true)
-            {
-                Console.WriteLine("Console Calculator App");
-                Console.WriteLine(new string('-', 15));
->>>>>>> Dev-B
 
                 Console.Write("a = ");
                 double a = double.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
@@ -51,31 +44,6 @@ namespace GitExercise
                 Console.Write("Option: ");
                 string choice = Console.ReadLine();
 
-<<<<<<< HEAD
-            switch (choice)
-            {
-                case "a":
-                    OptionsManager.Add(a, b);
-                    break;
-                case "s":
-                    OptionsManager.Subtract(a, b);
-                    break;
-                case "m":
-                    OptionsManager.Multiply(a, b);
-                    break;
-                case "d":
-                    OptionsManager.Divison(a, b);
-                    break;
-                case "sabs":
-                    OptionsManager.SubtractAbs(a, b);
-                    break;
-
-                  
-            }
-
-            Console.WriteLine("Press any key to close the app...");
-            Console.ReadKey(true);
-=======
                 switch (choice)
                 {
                     case "a":
@@ -100,7 +68,6 @@ namespace GitExercise
                 Console.WriteLine("Pres any key to close the app...");
                 Console.ReadKey(true);
             }
->>>>>>> Dev-B
         }
     }
 }
